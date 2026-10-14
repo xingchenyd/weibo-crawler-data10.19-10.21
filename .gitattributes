@@ -1,0 +1,9 @@
+# 统一跨平台换行符，避免 clone 到不同系统后脚本无法运行
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.py    text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
