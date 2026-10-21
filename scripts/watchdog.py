@@ -41,11 +41,11 @@ CST = timezone(timedelta(hours=8))
 
 CHECK_INTERVAL = 300          # 每 5 分钟检查一次
 STALE_LIMIT_MIN = 45          # 日志/库超过这么久没动静就视为异常
-# 守护结束时刻：采集的「最后一轮」在 09:00 之后才开跑（约 16 分钟），
+# 守护结束时刻：采集的「最后一轮」在 22:00 之后才开跑（约 16 分钟），
 # 所以守护要晚于它退出，否则最后一轮没人看护。
-END_HHMM = (9, 40)
+END_HHMM = (22, 40)
 TRACKER_ARGS = [
-    '--until', '09:00', '--interval', '30', '--per-board', '50',
+    '--until', '22:00', '--interval', '30', '--per-board', '50',
     '--max-post-per-round', '30', '--max-comment-pages', '5',
     '--max-req-per-round', '400',
 ]
